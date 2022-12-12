@@ -1,6 +1,6 @@
 #include<stdio.h>
 /**
- * main - Entry point.print a string using puts
+ * main - print a string using puts function implementing bettystyle
  * return: Always 0 (success)
 */
 int main(void)

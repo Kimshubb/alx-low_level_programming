@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Entry (output a string)
+ * main - A program that prints a string on stardard output
  * return: Always 0 (success)
  */
 int main(void)
