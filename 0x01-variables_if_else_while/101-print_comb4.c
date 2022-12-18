@@ -1,30 +1,27 @@
-#include<stdio.h>
-/** main - prints all possible combinations of 3 numbers
-  * return 0 success
-  */
-int main()
+#include <stdio.h>
+
+/**
+ * main - prints all possible different combinations of three digits
+ * Return: Always 0 (Success)
+ */
+int main(void)
 {
-	int i;
-	int n;
-	int j;
-	for (i = 48; i < 58; i++)
+	int n, m, l;
+
+	for (n = 48; n < 58; n++)
 	{
-		for (n = 48; n < 58; n++)
+		for (m = 49; m < 58; m++)
 		{
-			if (n > i)
+			for (l = 50; l < 58; l++)
 			{
-				for (j = 48; j < 58; j++)
+				if (l > m && m > n)
 				{
-					if (j > n)
+					putchar(n);
+					putchar(m);
+					putchar(l);
+					if (n != 55 || m != 56)
 					{
-						putchar(i);
-						putchar(n);
-						putchar(j);
-						if (i == 55 &&n == 56 &&j ==57)
-						{
-							break;
-						}
-						putchar(' ');
+						putchar(',');
 						putchar(' ');
 					}
 				}
