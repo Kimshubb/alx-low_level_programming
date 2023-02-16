@@ -6,6 +6,7 @@
   */
 void print_dog(struct dog *d) 
 {
+
 	if (!d) return;
 
 	printf("Name:%s\n", d->name ? d->name : "nil");
