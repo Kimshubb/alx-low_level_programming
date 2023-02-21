@@ -10,5 +10,5 @@ int main(void)
 	int n = 0;
 	printf("testing value:%d\n", n);
 	positive_or_negative(n);
-	return (0)
+	return (0);
 }
