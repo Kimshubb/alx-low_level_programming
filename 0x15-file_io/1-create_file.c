@@ -1,7 +1,9 @@
 #include"main.h"
 /**
-  *@filename - name of file to create
-  *@text_content - content of the filename
+  * @filename - name of file to create
+  * @text_content - content of the filename
+  * @s - pointer ro astring
+  * return int
   */
 int create_file(const char *filename, char *text_content)
 {
