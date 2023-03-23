@@ -1,0 +1,13 @@
+The approach used is to create a shared library that intercepts the call to the rand() function used by the gm program to generate the winning numbers. Thus standard implementation of rand() is replaced with with a custom implementation that always generates the numbers we want to win.
+
+Here are the steps to achieve this:
+
+Write a shared library that intercepts the call to rand() using the LD_PRELOAD environment variable. The library should define a new implementation for the rand() function that always generates the winning numbers we want.
+
+Compile the shared library and upload it to the server.
+
+Write a shell script that sets the LD_PRELOAD environment variable to load the shared library and executes the gm program with the winning numbers.
+
+Upload the shell script to the server.
+
+Wait for the mole to execute the shell script, which will set the LD_PRELOAD environment variable and execute the gm program with the winning numbers.
