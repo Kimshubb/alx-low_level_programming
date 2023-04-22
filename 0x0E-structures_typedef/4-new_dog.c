@@ -1,43 +1,32 @@
 #include <stdlib.h>
 #include <string.h>
 #include "dog.h"
-/**
-  *rename the struct to dog_t
-  *
-  *define dog_t structure members
-  */
-struct dog 
+
+dog_t *new_dog(char *name, float age, char *owner) 
 {
-  char *name;
-  float age;
-  char *owner;
-};dog_t
 
-dog_t *new_dog(char *name, float age, char *owner) {
-  dog_t *new_dog = malloc(sizeof(dog_t));
-  if (!new_dog)
-  { 
-	  return NULL;
-  }
-  new_dog->name = malloc(strlen(name) + 1);
+  	dog_t *new_dog = malloc(sizeof(dog_t));
+  	if (!new_dog)
+  	{ 
+		  return NULL;
+  	}
+  	new_dog->name = malloc(strlen(name) + 1);
 
-  if (!new_dog->name)
-  {
-  	  free(new_dog);
-    		return NULL;
-  }
+  	if (!new_dog->name)
+  	{
+  		  free(new_dog);
+    			return NULL;
+  	}
 
-  strcpy(new_dog->name, name;
-
-  new_dog->owner = malloc(strlen(owner) + 1);
-  if (!new_dog->owner) 
-  {
-  	  free(new_dog->name);
-    	  free(new_dog);
-    		return NULL;
-  }
-  strcpy(new_dog->owner, owner);  
-
-  new_dog->age = age;
-  return new_dog;
+  	strcpy(new_dog->name, name;
+  	new_dog->owner = malloc(strlen(owner) + 1);
+  	if (!new_dog->owner) 
+  	{
+  		free(new_dog->name);
+    	  	free(new_dog);
+    			return NULL;
+  	}
+  	strcpy(new_dog->owner, owner);  
+	new_dog->age = age;
+  	return new_dog;
 }
