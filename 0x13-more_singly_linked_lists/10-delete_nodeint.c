@@ -5,7 +5,7 @@
  * @Return 1 if successful -1 if not
  */
 #include "lists.h"
-int delete_nodeint_at_index(listint_t **head, unsigned int index);
+int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 	listint_t *current = NULL;
 	listint_t *temp = *head;
