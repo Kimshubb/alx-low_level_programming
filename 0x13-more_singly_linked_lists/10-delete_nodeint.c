@@ -7,28 +7,25 @@
 #include "lists.h"
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	listint_t *current = NULL;
-	listint_t *temp = *head;
-	unsigned int i;
+	listint_t *current = *head;
+	listint_t *prev = NULL;
 
 	if (*head == NULL)
 		return (-1);
 	if (index == 0)
 	{
-		*head = (*head)->next;;
-		free(temp);
+		*head = (*head)->next;
+		free(current);
 		return (1);
 	}
-	while (i <index - 1)
+	for (unsigned int i = 0; current && i < index; i++)
 	{
-		if (temp == NULL || (temp->next) == NULL)
-			return (-1);
-		temp = temp->next;
-		i++;
+		prev = current;
+		current = current->next;
 	}
-	current = temp->next;
-	temp->next = current->next;
+	if (current == NULL)
+		return (-1);
+	prev->next = current->next;
 	free(current);
-
 	return (1);
 }
