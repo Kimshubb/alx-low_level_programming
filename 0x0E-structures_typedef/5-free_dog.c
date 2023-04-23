@@ -1,12 +1,13 @@
 #include<stdlib.h>
 #include<stdio.h>
 #include "dog.h"
-/**function frees dog
-  *@d what is freed
+/** @frees_dog -FREES EMEMORY ALLOCATED FRO STRUCT DOG
+  * @d POINTER TO STRUCT DOG(what is freed)
+  * @RETURN VOID
   */
 void free _dog(dog_t*d)
 {
-	if (d)
+	if (d != NULL)
 	{
 		free(d->name);
 		free(d->owner);
