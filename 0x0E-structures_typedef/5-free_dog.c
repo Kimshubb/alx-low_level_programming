@@ -5,7 +5,7 @@
   * @d POINTER TO STRUCT DOG(what is freed)
   * @RETURN VOID
   */
-void free _dog(dog_t*d)
+void free _dog(dog_t *d)
 {
 	if (d != NULL)
 	{
