@@ -1,10 +1,10 @@
 #ifndef DOG_H
 #define DOG_H
 /**
-  *dog struct containing basic info
-  *@name: first member
-  *@age second member
-  *owner third member
+  * @dog struct containing basic info
+  * @name - first member
+  * @age - second member
+  * @owner - third member
   */
 typedef struct dog
 {
