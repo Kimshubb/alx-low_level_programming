@@ -1,7 +1,7 @@
 #ifndef DOG_H
 #define DOG_H
 /**
-  * @dog struct containing basic info
+  * dog_t - dog struct containing basic info
   * @name - first member
   * @age - second member
   * @owner - third member
