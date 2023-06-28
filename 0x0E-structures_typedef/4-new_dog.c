@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * @new_dog function creates a new dog
- * @name dogs name
- * @owner owners name
- * @AGE dogs name
+ * new_dog - function creates a new dog
+ * @name - dogs name
+ * @owner - owners name
+ * @age - dogs name
  * @return new dog
  */
 dog_t *new_dog(char *name, float age, char *owner)
