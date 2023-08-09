@@ -2,9 +2,9 @@
 
 /**
   * read_textfile - function reads a text file and prints it to the posix stdout
-  * @filename :text file being read
-  * @letters - number of characters reaad
-  * return w- actual number of btes read and printed
+  * @filename: text file being read
+  * @letters: number of characters reaad
+  * return: actual number of btes read and printed
   */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
